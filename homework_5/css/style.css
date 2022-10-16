@@ -171,7 +171,7 @@ a {
 }
 
 .arrow-block {
-  right: 10px;
+  right: 50px;
   position: fixed;
 }
 .arrow-block__image-arrow-up {
@@ -360,7 +360,7 @@ a {
     text-align: left;
 
     position: sticky;
-    top: 68px;
+    top: 96px;
   }
 
   .main-container-section-letter__body-list {
@@ -387,6 +387,7 @@ a {
   .letters-container {
     margin-top: 0;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -432,6 +433,66 @@ a {
   margin: -55px px 0 0;
 }
 #e:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#yo:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#ge:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#i:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#iy:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#k:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#l:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#m:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#n:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#o:before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px px 0 0;
+}
+#p:before {
   content: "";
   display: block;
   height: 55px;
