@@ -89,8 +89,8 @@ body {
   border: 2px solid #787878;
   border-radius: 10px;
 
-  padding-left: 15px;
-  padding-top: 7px;
+  padding-left: 13px;
+  padding-top: 5px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -109,8 +109,8 @@ body {
   width: 509px;
   height: 49px;
 
-  padding-left: 15px;
-  padding-top: 7px;
+  padding-left: 13px;
+  padding-top: 5px;
   background: #ffffff;
   border: 2px solid #787878;
   border-radius: 10px;
@@ -127,7 +127,7 @@ body {
 .fieldset-items__email::placeholder,
 .fieldset-items__password::placeholder {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 15px;
 
   font-weight: 700;
@@ -137,10 +137,31 @@ body {
   color: #cccccc;
 }
 
-.fieldset-items__label-checkbox-agree {
+.fieldset-items__checkbox,
+.checkbox-form {
   position: absolute;
   left: 79px;
   top: 262px;
+}
+
+.checkbox-form__label::before {
+  content: "";
+  position: absolute;
+
+  left: -34px;
+  top: -6px;
+
+  width: 22px;
+  height: 22px;
+
+  border: 2px solid #787878;
+  border-radius: 7px;
+}
+
+.checkbox-form__label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 
   width: 278px;
   height: 16px;
@@ -152,13 +173,36 @@ body {
   line-height: 16px;
 }
 
-.fieldset-items__checkbox-agree {
+.checkbox-form__label::after {
+  content: "";
   position: absolute;
-  left: 45px;
-  top: 258px;
 
-  width: 30px;
+  left: -31px;
+  top: -4px;
+
+  width: 20px;
+  height: 20px;
+
+  background: url(../images/check.png) no-repeat;
+  background-size: 100% 100%;
+
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.checkbox-form__input {
+  position: absolute;
+  left: 42px;
+  top: 255px;
+
+  width: 24px;
   height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-form__input:checked + .checkbox-form__label::after {
+  opacity: 1;
 }
 
 .form-container__button {
