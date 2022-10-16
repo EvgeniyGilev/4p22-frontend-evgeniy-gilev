@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #787878;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-login {
+  background-color: #1b2473;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+.form-container {
+  position: absolute;
+  width: 600px;
+  height: 412px;
+  display: block;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.form-container__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container__header {
+  width: 115px;
+  height: 50px;
+  left: 242px;
+  top: 26px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.form-container__fieldset {
+  border: none;
+}
+
+.fieldset-items__label-email {
+  position: absolute;
+  left: 53px;
+  top: 93px;
+
+  width: 40px;
+  height: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #787878;
+}
+
+.fieldset-items__email {
+  position: absolute;
+  left: 45px;
+  top: 112px;
+
+  width: 509px;
+  height: 49px;
+
+  background: #ffffff;
+  border: 2px solid #787878;
+  border-radius: 10px;
+
+  padding-left: 15px;
+  padding-top: 7px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+
+  color: #787878;
+}
+
+.fieldset-items__password {
+  position: absolute;
+  left: 45px;
+  top: 190px;
+
+  width: 509px;
+  height: 49px;
+
+  padding-left: 15px;
+  padding-top: 7px;
+  background: #ffffff;
+  border: 2px solid #787878;
+  border-radius: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+
+  color: #787878;
+}
+
+.fieldset-items__email::placeholder,
+.fieldset-items__password::placeholder {
+  position: absolute;
+  top: 7px;
+  left: 15px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+
+  color: #cccccc;
+}
+
+.fieldset-items__label-checkbox-agree {
+  position: absolute;
+  left: 79px;
+  top: 262px;
+
+  width: 278px;
+  height: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.fieldset-items__checkbox-agree {
+  position: absolute;
+  left: 45px;
+  top: 258px;
+
+  width: 30px;
+  height: 24px;
+}
+
+.form-container__button {
+  position: absolute;
+  top: 334px;
+  left: 210px;
+
+  width: 180px;
+  height: 52px;
+
+  background: #1a226b;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
