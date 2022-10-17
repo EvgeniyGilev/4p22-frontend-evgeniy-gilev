@@ -205,7 +205,6 @@ input:-webkit-autofill {
   color: #cccccc;
 }
 
-.fieldset-items__checkbox,
 .checkbox-form {
   position: absolute;
   width: 312px;
@@ -231,7 +230,7 @@ input:-webkit-autofill {
 .checkbox-form__label {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 4px;
 
   width: 278px;
   height: 16px;
@@ -368,7 +367,7 @@ input:-webkit-autofill {
     font-size: 24px;
     line-height: 16px;
 
-    opacity: 0;
+    opacity: 1;
     color: #787878;
   }
 
@@ -385,7 +384,7 @@ input:-webkit-autofill {
     border: 2px solid #787878;
     border-radius: 10px;
 
-    opacity: 0.5;
+    opacity: 1;
     color: #787878;
   }
 
@@ -415,7 +414,7 @@ input:-webkit-autofill {
     font-size: 24px;
     line-height: 16px;
 
-    opacity: 0;
+    opacity: 1;
 
     color: #787878;
   }
@@ -441,7 +440,7 @@ input:-webkit-autofill {
     font-size: 28px;
     line-height: 36px;
 
-    opacity: 0.5;
+    opacity: 1;
     color: #787878;
   }
 
@@ -550,7 +549,7 @@ input:-webkit-autofill {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 16px;
 
     color: #ffffff;
