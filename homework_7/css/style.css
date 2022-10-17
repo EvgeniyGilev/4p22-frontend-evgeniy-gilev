@@ -98,10 +98,7 @@ input:-webkit-autofill {
   font-size: 16px;
   line-height: 16px;
 
-  /* identical to box height, or 100% */
-
   opacity: 0;
-
   color: #787878;
 }
 
@@ -128,6 +125,7 @@ input:-webkit-autofill {
   font-size: 28px;
   line-height: 36px;
 
+  opacity: 0.5;
   color: #787878;
 }
 
