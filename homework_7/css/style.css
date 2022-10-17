@@ -9,6 +9,20 @@ body {
   padding: 0;
 }
 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset !important;
+  -webkit-text-fill-color: #787878 !important; /* цвет текста */
+  background-color: white !important;
+  color: #787878 !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset !important;
+  -webkit-text-fill-color: #787878 !important; /* цвет текста */
+  background-color: white !important;
+  color: #787878 !important;
+}
+
 .page-login {
   background-color: #1b2473;
 }
@@ -25,12 +39,12 @@ body {
   justify-content: center;
   overflow: auto;
 }
+
 .form-container {
   position: absolute;
   width: 600px;
   height: 412px;
   display: block;
-  border: 1px solid #000000;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background-color: #ffffff;
@@ -45,10 +59,12 @@ body {
 }
 
 .form-container__header {
+  position: absolute;
   width: 115px;
   height: 50px;
   left: 242px;
   top: 26px;
+  margin: 0;
 
   font-style: normal;
   font-weight: 700;
@@ -60,13 +76,21 @@ body {
   border: none;
 }
 
+.fieldset-items__email-form {
+  position: absolute;
+
+  width: 510px;
+  height: 49px;
+  left: 45px;
+  top: 112px;
+}
+
 .fieldset-items__label-email {
   position: absolute;
-  left: 53px;
-  top: 93px;
-
   width: 40px;
   height: 16px;
+  left: 8px;
+  top: -19px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -74,17 +98,23 @@ body {
   font-size: 16px;
   line-height: 16px;
 
+  /* identical to box height, or 100% */
+
+  opacity: 0;
+
   color: #787878;
 }
 
 .fieldset-items__email {
-  position: absolute;
-  left: 45px;
-  top: 112px;
+  box-sizing: border-box;
 
+  position: absolute;
   width: 509px;
   height: 49px;
+  left: 0px;
+  top: 0px;
 
+  outline: none;
   background: #ffffff;
   border: 2px solid #787878;
   border-radius: 10px;
@@ -97,20 +127,58 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
+
+  color: #787878;
+}
+
+.fieldset-items__email:focus + .fieldset-items__label-email,
+.fieldset-items__email:not(:placeholder-shown) {
+  opacity: 1;
+}
+
+.fieldset-items__password-form {
+  position: absolute;
+  width: 510px;
+  height: 49px;
+  left: 45px;
+  top: 193px;
+}
+
+.fieldset-items__label-password {
+  position: absolute;
+  width: 56px;
+  height: 16px;
+  left: 8px;
+  top: -19px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  opacity: 0;
 
   color: #787878;
 }
 
 .fieldset-items__password {
   position: absolute;
-  left: 45px;
-  top: 190px;
-
   width: 509px;
   height: 49px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
 
   padding-left: 13px;
   padding-top: 5px;
+
+  outline: none;
   background: #ffffff;
   border: 2px solid #787878;
   border-radius: 10px;
@@ -121,7 +189,13 @@ body {
   font-size: 28px;
   line-height: 36px;
 
+  opacity: 0.5;
   color: #787878;
+}
+
+.fieldset-items__password:focus + .fieldset-items__label-password,
+.fieldset-items__password:not(:placeholder-shown) {
+  opacity: 1;
 }
 
 .fieldset-items__email::placeholder,
@@ -140,6 +214,8 @@ body {
 .fieldset-items__checkbox,
 .checkbox-form {
   position: absolute;
+  width: 312px;
+  height: 24px;
   left: 79px;
   top: 262px;
 }
@@ -197,7 +273,7 @@ body {
 
   width: 24px;
   height: 24px;
-
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -225,3 +301,215 @@ body {
 
   color: #ffffff;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .form-container {
+    position: absolute;
+    width: 728px;
+    height: 697px;
+    left: 20px;
+    top: 20px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+
+  .form-container__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container__header {
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    left: 288px;
+    top: 38px;
+    margin: 0;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 50px;
+
+    color: #787878;
+  }
+
+  .form-container__fieldset {
+    border: none;
+  }
+
+  .fieldset-items__label-email {
+    position: absolute;
+    left: 45px;
+    top: 93px;
+
+    width: 40px;
+    height: 16px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #787878;
+  }
+
+  .fieldset-items__email {
+    position: absolute;
+    left: 45px;
+    top: 112px;
+
+    width: 509px;
+    height: 49px;
+
+    background: #ffffff;
+    border: 2px solid #787878;
+    border-radius: 10px;
+
+    padding-left: 13px;
+    padding-top: 5px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #787878;
+  }
+
+  .fieldset-items__password {
+    position: absolute;
+    left: 45px;
+    top: 190px;
+
+    width: 509px;
+    height: 49px;
+
+    padding-left: 13px;
+    padding-top: 5px;
+    background: #ffffff;
+    border: 2px solid #787878;
+    border-radius: 10px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #787878;
+  }
+
+  .fieldset-items__email::placeholder,
+  .fieldset-items__password::placeholder {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #cccccc;
+  }
+
+  .fieldset-items__checkbox,
+  .checkbox-form {
+    position: absolute;
+    left: 79px;
+    top: 262px;
+  }
+
+  .checkbox-form__label::before {
+    content: "";
+    position: absolute;
+
+    left: -34px;
+    top: -6px;
+
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #787878;
+    border-radius: 7px;
+  }
+
+  .checkbox-form__label {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: 278px;
+    height: 16px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .checkbox-form__label::after {
+    content: "";
+    position: absolute;
+
+    left: -31px;
+    top: -4px;
+
+    width: 20px;
+    height: 20px;
+
+    background: url(../images/check.png) no-repeat;
+    background-size: 100% 100%;
+
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .checkbox-form__input {
+    position: absolute;
+    left: 42px;
+    top: 255px;
+
+    width: 24px;
+    height: 24px;
+
+    opacity: 0;
+  }
+
+  .checkbox-form__input:checked + .checkbox-form__label::after {
+    opacity: 1;
+  }
+
+  .form-container__button {
+    position: absolute;
+    top: 334px;
+    left: 210px;
+
+    width: 180px;
+    height: 52px;
+
+    background: #1a226b;
+    border-radius: 10px;
+    border: none;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+
+    color: #ffffff;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1440px) {
+} */

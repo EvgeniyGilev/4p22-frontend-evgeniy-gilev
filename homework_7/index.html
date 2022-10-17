@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework_7</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +22,16 @@
             <form class="form-container__body" action="#">
                 <h2 class="form-container__header">Вход</h2>
                 <fieldset class="form-container__fieldset fieldset-items">
-                    <label class="fieldset-items__label-email" for="email">Email</label>
-                    <input class="fieldset-items__email" type="text" id="email" name="email"
-                        placeholder="Введите email">
-                    <label class="fieldset-items__label-password" for="password"></label>
-                    <input class="fieldset-items__password" type="password" id="password" name="password"
-                        placeholder="Введите пароль">
+                    <div class="fieldset-items__email-form">
+                        <input class="fieldset-items__email" type="text" id="email" name="email"
+                            placeholder="Введите email">
+                        <label class="fieldset-items__label-email" for="email">Email</label>
+                    </div>
+                    <div class="fieldset-items__password-form">
+                        <input class="fieldset-items__password" type="password" id="password" name="password"
+                            placeholder="Введите пароль">
+                        <label class="fieldset-items__label-password" for="password">Пароль</label>
+                    </div>
                     <div class="fieldset-items__checkbox checkbox-form">
                         <input class="checkbox-form__input" type="checkbox" name="agree" id="agree">
                         <label class="checkbox-form__label" for="agree">Я согласен получать обновления
