@@ -72,11 +72,7 @@ input:-webkit-autofill {
   line-height: 50px;
 }
 
-.form-container__fieldset {
-  border: none;
-}
-
-.fieldset-items__email-form {
+.email-form {
   position: absolute;
 
   width: 510px;
@@ -85,7 +81,7 @@ input:-webkit-autofill {
   top: 112px;
 }
 
-.fieldset-items__label-email {
+.email-form__email-label {
   position: absolute;
   width: 40px;
   height: 16px;
@@ -102,7 +98,7 @@ input:-webkit-autofill {
   color: #787878;
 }
 
-.fieldset-items__email {
+.email-form__email-input {
   box-sizing: border-box;
 
   position: absolute;
@@ -129,12 +125,12 @@ input:-webkit-autofill {
   color: #787878;
 }
 
-.fieldset-items__email:focus + .fieldset-items__label-email,
-.fieldset-items__email:not(:placeholder-shown) {
+.email-form__email-input:focus + .email-form__email-label,
+.email-form__email-input:not(:placeholder-shown) {
   opacity: 1;
 }
 
-.fieldset-items__password-form {
+.password-form {
   position: absolute;
   width: 510px;
   height: 49px;
@@ -142,7 +138,7 @@ input:-webkit-autofill {
   top: 193px;
 }
 
-.fieldset-items__label-password {
+.password-form__password-label {
   position: absolute;
   width: 56px;
   height: 16px;
@@ -160,7 +156,7 @@ input:-webkit-autofill {
   color: #787878;
 }
 
-.fieldset-items__password {
+.password-form__password-input {
   position: absolute;
   width: 509px;
   height: 49px;
@@ -191,13 +187,13 @@ input:-webkit-autofill {
   color: #787878;
 }
 
-.fieldset-items__password:focus + .fieldset-items__label-password,
-.fieldset-items__password:not(:placeholder-shown) {
+.password-form__password-input:focus + .password-form__password-label,
+.password-form__password-input:not(:placeholder-shown) {
   opacity: 1;
 }
 
-.fieldset-items__email::placeholder,
-.fieldset-items__password::placeholder {
+.email-form__email-input::placeholder,
+.password-form__password-input::placeholder {
   position: absolute;
   top: 5px;
   left: 15px;
@@ -300,7 +296,20 @@ input:-webkit-autofill {
   color: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+  }
+
   .form-container {
     position: absolute;
     width: 728px;
@@ -308,7 +317,7 @@ input:-webkit-autofill {
     left: 20px;
     top: 20px;
 
-    background-color: #ffffff;
+    background: #ffffff;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -327,52 +336,104 @@ input:-webkit-autofill {
     height: 50px;
     left: 288px;
     top: 38px;
-    margin: 0;
 
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 50px;
+    /* identical to box height, or 83% */
 
     color: #787878;
   }
 
-  .form-container__fieldset {
-    border: none;
+  .email-form {
+    position: absolute;
+    width: 638px;
+    height: 75px;
+    left: 45px;
+    top: 101px;
   }
 
-  .fieldset-items__label-email {
+  .email-form__email-label {
     position: absolute;
-    left: 45px;
-    top: 93px;
-
-    width: 40px;
+    width: 60px;
     height: 16px;
+    left: 8px;
+    top: 0px;
 
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 16px;
 
+    opacity: 0;
     color: #787878;
   }
 
-  .fieldset-items__email {
-    position: absolute;
-    left: 45px;
-    top: 112px;
+  .email-form__email-input {
+    box-sizing: border-box;
 
-    width: 509px;
+    position: absolute;
+    width: 638px;
     height: 49px;
+    left: 0px;
+    top: 24px;
 
     background: #ffffff;
     border: 2px solid #787878;
     border-radius: 10px;
 
-    padding-left: 13px;
-    padding-top: 5px;
+    opacity: 0.5;
+    color: #787878;
+  }
+
+  .email-form__email-input:focus + .email-form__email-label,
+  .email-form__email-input:not(:placeholder-shown) {
+    opacity: 1;
+  }
+
+  .password-form {
+    position: absolute;
+    width: 638px;
+    height: 73px;
+    left: 45px;
+    top: 187px;
+  }
+
+  .password-form__password-label {
+    position: absolute;
+    width: 84px;
+    height: 16px;
+    left: 8px;
+    top: 0px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+
+    opacity: 0;
+
+    color: #787878;
+  }
+
+  .password-form__password-input {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 638px;
+    height: 49px;
+    left: 0px;
+    top: 24px;
+
+    background: #ffffff;
+    border: 2px solid #787878;
+    border-radius: 10px;
+
+    outline: none;
 
     font-family: "Roboto";
     font-style: normal;
@@ -380,34 +441,17 @@ input:-webkit-autofill {
     font-size: 28px;
     line-height: 36px;
 
+    opacity: 0.5;
     color: #787878;
   }
 
-  .fieldset-items__password {
-    position: absolute;
-    left: 45px;
-    top: 190px;
-
-    width: 509px;
-    height: 49px;
-
-    padding-left: 13px;
-    padding-top: 5px;
-    background: #ffffff;
-    border: 2px solid #787878;
-    border-radius: 10px;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-
-    color: #787878;
+  .password-form__password-input:focus + .password-form__password-label,
+  .password-form__password-input:not(:placeholder-shown) {
+    opacity: 1;
   }
 
-  .fieldset-items__email::placeholder,
-  .fieldset-items__password::placeholder {
+  .email-form__email-input::placeholder,
+  .password-form__password-input::placeholder {
     position: absolute;
     top: 5px;
     left: 15px;
@@ -419,51 +463,56 @@ input:-webkit-autofill {
     color: #cccccc;
   }
 
-  .fieldset-items__checkbox,
   .checkbox-form {
     position: absolute;
-    left: 79px;
-    top: 262px;
-  }
-
-  .checkbox-form__label::before {
-    content: "";
-    position: absolute;
-
-    left: -34px;
-    top: -6px;
-
-    width: 22px;
-    height: 22px;
-
-    border: 2px solid #787878;
-    border-radius: 7px;
+    width: 408px;
+    height: 32px;
+    left: 45px;
+    top: 279px;
   }
 
   .checkbox-form__label {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 42px;
+    top: 8px;
 
-    width: 278px;
+    width: 358px;
     height: 16px;
 
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 16px;
+
+    color: #787878;
+  }
+
+  .checkbox-form__label::before {
+    content: "";
+    box-sizing: border-box;
+
+    position: absolute;
+
+    left: -42px;
+    top: -8px;
+
+    width: 32px;
+    height: 32px;
+
+    background: #ffffff;
+    border: 2px solid #787878;
+    border-radius: 7px;
   }
 
   .checkbox-form__label::after {
     content: "";
     position: absolute;
 
-    left: -31px;
-    top: -4px;
+    left: -38px;
 
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 
     background: url(../images/check.png) no-repeat;
     background-size: 100% 100%;
@@ -479,7 +528,7 @@ input:-webkit-autofill {
 
     width: 24px;
     height: 24px;
-
+    visibility: hidden;
     opacity: 0;
   }
 
@@ -489,11 +538,10 @@ input:-webkit-autofill {
 
   .form-container__button {
     position: absolute;
-    top: 334px;
-    left: 210px;
-
-    width: 180px;
-    height: 52px;
+    width: 220px;
+    height: 80px;
+    left: 254px;
+    top: 375px;
 
     background: #1a226b;
     border-radius: 10px;
