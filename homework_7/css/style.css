@@ -371,6 +371,7 @@ input:-webkit-autofill {
 
   .email-form__email-input {
     box-sizing: border-box;
+    padding-left: calc(16 / 768 * 100vw);
 
     position: absolute;
     width: calc(638 / 768 * 100vw);
@@ -419,6 +420,7 @@ input:-webkit-autofill {
 
   .password-form__password-input {
     box-sizing: border-box;
+    padding-left: calc(16 / 768 * 100vw);
 
     position: absolute;
     width: calc(638 / 768 * 100vw);
