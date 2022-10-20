@@ -194,10 +194,6 @@ input:-webkit-autofill {
 
 .email-form__email-input::placeholder,
 .password-form__password-input::placeholder {
-  position: absolute;
-  top: calc(6 / 1440 * 100vw);
-  left: calc(15 / 1440 * 100vw);
-
   font-weight: 700;
   font-size: calc(28 / 1440 * 100vw);
   line-height: calc(36 / 1440 * 100vw);
@@ -451,10 +447,6 @@ input:-webkit-autofill {
 
   .email-form__email-input::placeholder,
   .password-form__password-input::placeholder {
-    position: absolute;
-    top: calc(5 / 768 * 100vw);
-    left: calc(15 / 768 * 100vw);
-
     font-weight: 700;
     font-size: calc(28 / 768 * 100vw);
     line-height: calc(36 / 768 * 100vw);
