@@ -194,10 +194,6 @@ input:-webkit-autofill {
 
 .email-form__email-input::placeholder,
 .password-form__password-input::placeholder {
-  font-weight: 700;
-  font-size: calc(28 / 1440 * 100vw);
-  line-height: calc(36 / 1440 * 100vw);
-
   color: #cccccc;
 }
 
@@ -447,10 +443,6 @@ input:-webkit-autofill {
 
   .email-form__email-input::placeholder,
   .password-form__password-input::placeholder {
-    font-weight: 700;
-    font-size: calc(28 / 768 * 100vw);
-    line-height: calc(36 / 768 * 100vw);
-
     color: #cccccc;
   }
 
