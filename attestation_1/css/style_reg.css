@@ -26,68 +26,119 @@ input:-webkit-autofill {
 }
 
 .page-login {
-  background-color: #1b2473;
+  background-color: #ffffff;
+}
+
+.header-container {
+  width: 100vw;
+  height: calc(80 / 1440 * 100vw);
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-container__img-logo {
+  width: calc(222 / 1440 * 100vw);
+  height: calc(50 / 1440 * 100vw);
+
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: calc(18 / 1440 * 100vw);
+  margin-bottom: calc(12 / 1440 * 100vw);
+}
+
+.header-container__text-course-name {
+  width: calc(242 / 1440 * 100vw);
+  height: calc(44 / 1440 * 100vw);
+
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: calc(21 / 1440 * 100vw);
+  margin-bottom: calc(15 / 1440 * 100vw);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(36 / 1440 * 100vw);
+  line-height: calc(44 / 1440 * 100vw);
+
+  color: #787878;
+}
+.header-container__nav-bar {
+  display: flex;
+  margin-left: calc(628 / 1440 * 100vw);
+}
+.header-container__registration {
+  margin-top: calc(25 / 1440 * 100vw);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(24 / 1440 * 100vw);
+  line-height: calc(29 / 1440 * 100vw);
+
+  color: #787878;
+}
+
+.header-container__entry {
+  margin-top: calc(25 / 1440 * 100vw);
+  margin-left: calc(28 / 1440 * 100vw);
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(24 / 1440 * 100vw);
+  line-height: calc(29 / 1440 * 100vw);
+
+  color: #1a226b;
 }
 
 .main {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .form-container {
-  position: absolute;
-
-  left: calc(412 / 1440 * 100vw);
-  top: calc(82 / 1440 * 100vw);
-
   width: calc(600 / 1440 * 100vw);
-  height: calc(412 / 1440 * 100vw);
-  display: block;
+  height: calc(383 / 1440 * 100vw);
+
+  margin-left: calc(403 / 1440 * 100vw);
+  margin-top: calc(125 / 1440 * 100vw);
+
+  background: #ffffff;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-  border-radius: calc(20 / 1440 * 100vw);
-  background-color: #ffffff;
+
+  display: block;
 }
 
 .form-container__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .form-container__header {
-  position: absolute;
-  width: calc(115 / 1440 * 100vw);
-  height: calc(50 / 1440 * 100vw);
-  left: calc(242 / 1440 * 100vw);
-  top: calc(26 / 1440 * 100vw);
-  margin: 0;
+  margin-left: calc(242 / 1440 * 100vw);
+  margin-top: calc(26 / 1440 * 100vw);
 
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: calc(50 / 1440 * 100vw);
   line-height: calc(50 / 1440 * 100vw);
+
+  color: #787878;
 }
 
 .email-form {
-  position: absolute;
-
   width: calc(510 / 1440 * 100vw);
-  height: calc(49 / 1440 * 100vw);
-  left: calc(45 / 1440 * 100vw);
-  top: calc(112 / 1440 * 100vw);
+  height: calc(65 / 1440 * 100vw);
+  margin-left: calc(45 / 1440 * 100vw);
+  margin-top: calc(20 / 1440 * 100vw);
 }
 
 .email-form__email-label {
-  position: absolute;
-  width: calc(40 / 1440 * 100vw);
-  height: calc(16 / 1440 * 100vw);
-  left: calc(8 / 1440 * 100vw);
-  top: calc(-19 / 1440 * 100vw);
+  display: block;
+  padding-left: calc(8 / 1440 * 100vw);
 
   font-family: "Roboto";
   font-style: normal;
@@ -95,26 +146,18 @@ input:-webkit-autofill {
   font-size: calc(16 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
 
-  opacity: 0;
   color: #787878;
 }
 
 .email-form__email-input {
   box-sizing: border-box;
 
-  position: absolute;
-  width: calc(509 / 1440 * 100vw);
+  width: calc(510 / 1440 * 100vw);
   height: calc(49 / 1440 * 100vw);
-  left: 0px;
-  top: 0px;
 
   outline: none;
   background: #ffffff;
   border: 2px solid #787878;
-  border-radius: calc(10 / 1440 * 100vw);
-
-  padding-left: calc(13 / 1440 * 100vw);
-  padding-top: calc(5 / 1440 * 100vw);
 
   font-family: "Roboto";
   font-style: normal;
@@ -122,29 +165,21 @@ input:-webkit-autofill {
   font-size: calc(28 / 1440 * 100vw);
   line-height: calc(36 / 1440 * 100vw);
 
-  opacity: 0.5;
+  padding-left: calc(15 / 1440 * 100vw);
+
   color: #787878;
 }
 
-.email-form__email-input:focus + .email-form__email-label,
-.email-form__email-input:not(:placeholder-shown) {
-  opacity: 1;
-}
-
 .password-form {
-  position: absolute;
   width: calc(510 / 1440 * 100vw);
-  height: calc(49 / 1440 * 100vw);
-  left: calc(45 / 1440 * 100vw);
-  top: calc(193 / 1440 * 100vw);
+  height: calc(65 / 1440 * 100vw);
+  margin-left: calc(45 / 1440 * 100vw);
+  margin-top: calc(16 / 1440 * 100vw);
 }
 
 .password-form__password-label {
-  position: absolute;
-  width: calc(56 / 1440 * 100vw);
-  height: calc(16 / 1440 * 100vw);
-  left: calc(8 / 1440 * 100vw);
-  top: calc(-19 / 1440 * 100vw);
+  display: block;
+  padding-left: calc(8 / 1440 * 100vw);
 
   font-family: "Roboto";
   font-style: normal;
@@ -152,17 +187,12 @@ input:-webkit-autofill {
   font-size: calc(16 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
 
-  opacity: 0;
-
   color: #787878;
 }
 
 .password-form__password-input {
-  position: absolute;
-  width: calc(509 / 1440 * 100vw);
+  width: calc(510 / 1440 * 100vw);
   height: calc(49 / 1440 * 100vw);
-  left: 0px;
-  top: 0px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -170,27 +200,13 @@ input:-webkit-autofill {
   font-size: calc(28 / 1440 * 100vw);
   line-height: calc(36 / 1440 * 100vw);
 
-  padding-left: calc(13 / 1440 * 100vw);
-  padding-top: calc(5 / 1440 * 100vw);
+  padding-left: calc(15 / 1440 * 100vw);
 
   outline: none;
   background: #ffffff;
   border: 2px solid #787878;
-  border-radius: calc(10 / 1440 * 100vw);
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(28 / 1440 * 100vw);
-  line-height: calc(36 / 1440 * 100vw);
-
-  opacity: 0.5;
   color: #787878;
-}
-
-.password-form__password-input:focus + .password-form__password-label,
-.password-form__password-input:not(:placeholder-shown) {
-  opacity: 1;
 }
 
 .email-form__email-input::placeholder,
@@ -198,85 +214,13 @@ input:-webkit-autofill {
   color: #cccccc;
 }
 
-.checkbox-form {
-  position: absolute;
-  width: calc(312 / 1440 * 100vw);
-  height: calc(24 / 1440 * 100vw);
-  left: calc(79 / 1440 * 100vw);
-  top: calc(262 / 1440 * 100vw);
-}
-
-.checkbox-form__label::before {
-  content: "";
-  position: absolute;
-
-  left: calc(-34 / 1440 * 100vw);
-  top: calc(-6 / 1440 * 100vw);
-
-  width: calc(20 / 1440 * 100vw);
-  height: calc(20 / 1440 * 100vw);
-
-  border: 2px solid #787878;
-  border-radius: calc(7 / 1440 * 100vw);
-}
-
-.checkbox-form__label {
-  position: absolute;
-  left: 0px;
-  top: calc(1 / 1440 * 100vw);
-
-  width: calc(278 / 1440 * 100vw);
-  height: calc(16 / 1440 * 100vw);
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(14 / 1440 * 100vw);
-  line-height: calc(16 / 1440 * 100vw);
-}
-
-.checkbox-form__label::after {
-  content: "";
-  position: absolute;
-
-  left: calc(-32 / 1440 * 100vw);
-  top: calc(-4 / 1440 * 100vw);
-
-  width: calc(20 / 1440 * 100vw);
-  height: calc(20 / 1440 * 100vw);
-
-  background: url("../images/check.png") no-repeat;
-  background-size: contain;
-
-  opacity: 0;
-  transition: 0.2s;
-}
-
-.checkbox-form__input {
-  position: absolute;
-  left: calc(42 / 1440 * 100vw);
-  top: calc(255 / 1440 * 100vw);
-
-  width: calc(24 / 1440 * 100vw);
-  height: calc(24 / 1440 * 100vw);
-  visibility: hidden;
-  opacity: 0;
-}
-
-.checkbox-form__input:checked + .checkbox-form__label::after {
-  opacity: 1;
-}
-
 .form-container__button {
-  position: absolute;
-  top: calc(334 / 1440 * 100vw);
-  left: calc(210 / 1440 * 100vw);
-
   width: calc(180 / 1440 * 100vw);
   height: calc(52 / 1440 * 100vw);
 
-  background: #1a226b;
-  border-radius: calc(10 / 1440 * 100vw);
+  margin-top: calc(52 / 1440 * 100vw);
+  margin-left: calc(210 / 1440 * 100vw);
+
   border: none;
 
   font-family: "Roboto";
@@ -286,6 +230,8 @@ input:-webkit-autofill {
   line-height: calc(16 / 1440 * 100vw);
 
   color: #ffffff;
+
+  background: #1a226b;
 }
 
 @media screen and (max-width: 768px) {
