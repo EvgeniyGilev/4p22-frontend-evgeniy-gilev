@@ -247,8 +247,6 @@ input:-webkit-autofill {
     line-height: calc(19 / 768 * 100vw);
   }
   .header-container__registration {
-    width: 105px;
-    height: 19px;
     margin-top: calc(30 / 768 * 100vw);
   }
 
