@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: #787878;
 }
 
 body {
@@ -23,6 +21,10 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #787878 !important; /* цвет текста */
   background-color: white !important;
   color: #787878 !important;
+}
+
+a:visited {
+  color: #787878;
 }
 
 .page-login {
@@ -51,6 +53,7 @@ input:-webkit-autofill {
   margin-top: calc(21 / 1440 * 100vw);
   margin-bottom: calc(15 / 1440 * 100vw);
 
+  color: #787878;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -61,6 +64,7 @@ input:-webkit-autofill {
   display: flex;
   margin-left: calc(628 / 1440 * 100vw);
 
+  color: #787878;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -105,6 +109,8 @@ input:-webkit-autofill {
   margin-left: calc(242 / 1440 * 100vw);
   margin-top: calc(26 / 1440 * 100vw);
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(50 / 1440 * 100vw);
@@ -123,6 +129,8 @@ input:-webkit-autofill {
   margin-left: calc(8 / 1440 * 100vw);
   margin-bottom: calc(3 / 1440 * 100vw);
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(16 / 1440 * 100vw);
@@ -132,13 +140,15 @@ input:-webkit-autofill {
 .email-form__email-input {
   box-sizing: border-box;
 
-  width: calc(510 / 1440 * 100vw);
+  width: calc(509 / 1440 * 100vw);
   height: calc(49 / 1440 * 100vw);
 
   outline: none;
   background: #ffffff;
   border: 2px solid #787878;
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(28 / 1440 * 100vw);
@@ -159,6 +169,8 @@ input:-webkit-autofill {
   padding-left: calc(8 / 1440 * 100vw);
   padding-bottom: calc(5 / 1440 * 100vw);
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(16 / 1440 * 100vw);
@@ -166,9 +178,13 @@ input:-webkit-autofill {
 }
 
 .password-form__password-input {
-  width: calc(510 / 1440 * 100vw);
+  box-sizing: border-box;
+
+  width: calc(509 / 1440 * 100vw);
   height: calc(49 / 1440 * 100vw);
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(28 / 1440 * 100vw);
@@ -190,11 +206,14 @@ input:-webkit-autofill {
   width: calc(180 / 1440 * 100vw);
   height: calc(52 / 1440 * 100vw);
 
+  padding: 0;
   margin-top: calc(52 / 1440 * 100vw);
   margin-left: calc(210 / 1440 * 100vw);
 
   border: none;
 
+  font-family: "Roboto", sans-serif;
+  color: #787878;
   font-style: normal;
   font-weight: 700;
   font-size: calc(24 / 1440 * 100vw);
@@ -311,7 +330,7 @@ input:-webkit-autofill {
   .email-form__email-input {
     box-sizing: border-box;
 
-    width: calc(510 / 768 * 100vw);
+    width: calc(509 / 768 * 100vw);
     height: calc(49 / 768 * 100vw);
 
     outline: none;
@@ -345,7 +364,8 @@ input:-webkit-autofill {
   }
 
   .password-form__password-input {
-    width: calc(510 / 768 * 100vw);
+    box-sizing: border-box;
+    width: calc(509 / 768 * 100vw);
     height: calc(49 / 768 * 100vw);
 
     font-style: normal;
