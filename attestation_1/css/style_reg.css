@@ -361,6 +361,10 @@ a:visited {
 }
 
 .form-container__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: calc(180 / 1440 * 100vw);
   height: calc(52 / 1440 * 100vw);
 
@@ -609,6 +613,7 @@ a:visited {
     position: relative;
     display: flex;
     align-items: center;
+
     width: calc(510 / 768 * 100vw);
     height: calc(20 / 768 * 100vw);
   }
@@ -722,6 +727,10 @@ a:visited {
   }
 
   .form-container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: calc(180 / 768 * 100vw);
     height: calc(52 / 768 * 100vw);
 
