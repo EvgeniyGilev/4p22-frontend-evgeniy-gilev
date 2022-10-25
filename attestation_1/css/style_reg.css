@@ -32,6 +32,8 @@ a:visited {
 }
 
 .header-container {
+  position: sticky;
+  top: calc(80 / 1440 * 100vw);
   width: 100vw;
   height: calc(80 / 1440 * 100vw);
   display: flex;
@@ -219,12 +221,12 @@ a:visited {
   height: calc(20 / 1440 * 100vw);
 }
 
-.radio-container__radio-man {
-  position: absolute;
-  margin: 0 auto;
-  width: calc(20 / 1440 * 100vw);
+.radio-container__button-container-woman {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(510 / 1440 * 100vw);
   height: calc(20 / 1440 * 100vw);
-  opacity: 0;
 }
 
 .radio-container__label {
@@ -254,19 +256,7 @@ a:visited {
   background-clip: content-box;
 }
 
-.radio-container__radio-man:checked + .radio-container__label::before {
-  background-color: #787878;
-}
-
-.radio-container__button-container-woman {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: calc(510 / 1440 * 100vw);
-  height: calc(20 / 1440 * 100vw);
-}
-
-.radio-container__radio-woman {
+.radio-container__radio-input {
   position: absolute;
   margin: 0 auto;
   width: calc(20 / 1440 * 100vw);
@@ -274,7 +264,7 @@ a:visited {
   opacity: 0;
 }
 
-.radio-container__radio-woman:checked + .radio-container__label::before {
+.radio-container__radio-input:checked + .radio-container__label::before {
   background-color: #787878;
 }
 
@@ -618,7 +608,7 @@ a:visited {
     height: calc(20 / 768 * 100vw);
   }
 
-  .radio-container__radio-woman {
+  .radio-container__radio-input {
     position: absolute;
     margin: 0 auto;
     width: calc(20 / 768 * 100vw);
