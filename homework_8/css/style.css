@@ -79,9 +79,6 @@ input:-webkit-autofill {
 }
 
 .value-container__label {
-  margin-left: calc(8 / 1440 * 100vw);
-  margin-bottom: calc(3 / 1440 * 100vw);
-
   font-family: 'Roboto', sans-serif;
   color: #787878;
   font-style: normal;
