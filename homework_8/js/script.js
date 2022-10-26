@@ -60,7 +60,7 @@ button.addEventListener('click', (e) => {
       console.log('Операция некорректна');
       document.getElementById('message-error').innerText =
         'Операция некорректна';
-      document.getElementById('result').value = result;
+      document.getElementById('result').value = '';
     } else {
       document.getElementById('result').value = result;
       console.log(result);
