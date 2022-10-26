@@ -30,7 +30,7 @@ input:-webkit-autofill {
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  font-size: xx-large;
+  font-size: calc(24 / 1440 * 100vw);
 }
 
 .main {
@@ -83,6 +83,7 @@ input:-webkit-autofill {
   color: #787878;
   font-style: normal;
   font-weight: 700;
+  margin: calc(5 / 1440 * 100vw);
   font-size: calc(16 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
 }
@@ -109,7 +110,7 @@ input:-webkit-autofill {
   padding-left: calc(5 / 1440 * 100vw);
 }
 
-#operator {
+.value-container__operator-input {
   box-sizing: border-box;
   text-align: center;
 
@@ -169,6 +170,16 @@ input:-webkit-autofill {
 }
 
 @media screen and (max-width: 768px) {
+  .header-container {
+    width: 100vw;
+    height: calc(100 / 1440 * 100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-size: calc(24 / 768 * 100vw);
+  }
+
   .form-container {
     width: calc(600 / 768 * 100vw);
     height: calc(500 / 768 * 100vw);
@@ -188,16 +199,16 @@ input:-webkit-autofill {
 
   .form-container__header {
     vertical-align: middle;
-
     font-family: 'Roboto', sans-serif;
     color: #787878;
     font-style: normal;
     font-weight: 700;
-    font-size: calc(24 / 768 * 100vw);
-    line-height: calc(24 / 768 * 100vw);
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
   }
 
   .value-container {
+    margin: calc(5 / 768 * 100vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,6 +222,8 @@ input:-webkit-autofill {
     color: #787878;
     font-style: normal;
     font-weight: 700;
+    margin: calc(5 / 1440 * 100vw);
+
     font-size: calc(16 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
   }
@@ -237,7 +250,7 @@ input:-webkit-autofill {
     padding-left: calc(5 / 768 * 100vw);
   }
 
-  #operator {
+  .value-container__operator-input {
     box-sizing: border-box;
     text-align: center;
 
