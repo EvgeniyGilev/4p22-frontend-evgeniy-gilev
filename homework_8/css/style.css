@@ -167,3 +167,132 @@ input:-webkit-autofill {
   font-size: calc(16 / 1440 * 100vw);
   line-height: calc(16 / 1440 * 100vw);
 }
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: calc(600 / 768 * 100vw);
+    height: calc(500 / 768 * 100vw);
+
+    background: #ffffff;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .form-container__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container__header {
+    vertical-align: middle;
+
+    font-family: 'Roboto', sans-serif;
+    color: #787878;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24 / 768 * 100vw);
+    line-height: calc(24 / 768 * 100vw);
+  }
+
+  .value-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(300 / 768 * 100vw);
+    height: calc(80 / 768 * 100vw);
+  }
+
+  .value-container__label {
+    font-family: 'Roboto', sans-serif;
+    color: #787878;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+  }
+
+  .value-container__input {
+    box-sizing: border-box;
+
+    width: calc(300 / 768 * 100vw);
+    height: calc(50 / 768 * 100vw);
+
+    outline: none;
+    background: #ffffff;
+    border: 2px solid #787878;
+
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    color: #787878;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+
+    padding-left: calc(5 / 768 * 100vw);
+  }
+
+  #operator {
+    box-sizing: border-box;
+    text-align: center;
+
+    width: calc(40 / 768 * 100vw);
+    height: calc(40 / 768 * 100vw);
+
+    outline: none;
+    background: #ffffff;
+    border: 2px solid #787878;
+
+    font-family: 'Roboto', sans-serif;
+    color: #787878;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+
+    padding-left: calc(5 / 768 * 100vw);
+  }
+
+  .form-container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(90 / 768 * 100vw);
+    height: calc(40 / 768 * 100vw);
+
+    padding: 0;
+
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+
+    color: #ffffff;
+
+    background: #2b3bc5;
+  }
+
+  .form-container__button:active {
+    background: #2bc5a4;
+  }
+
+  .form-container__result {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: red;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+  }
+}
