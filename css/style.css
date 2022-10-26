@@ -1,16 +1,16 @@
 .main-list-container {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: calc(50 / 1440 * 100vw);
+  margin-right: calc(50 / 1440 * 100vw);
 }
 
 .main-list-container__part-name {
-  font: 20px "Trebuchet MS", "Lucida Sans";
+  font: calc(20 / 1440 * 100vw) "Trebuchet MS", "Lucida Sans";
   font-weight: bold;
 }
 .main-list-container__list-rounded {
   counter-reset: li;
   list-style: none;
-  font: 16px "Trebuchet MS", "Lucida Sans";
+  font: calc(16 / 1440 * 100vw) "Trebuchet MS", "Lucida Sans";
   padding: 0;
 }
 .main-list-container__list-rounded a {

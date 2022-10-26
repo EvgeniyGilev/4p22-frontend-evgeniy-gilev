@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_8</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header-container">
+            <h3>Простой калькулятор</h3>
+        </div>
+    </header>
+    <main class="main">
+        <div class="form-container">
+            <form class="form-container__body">
+                <div class="form-container__header">
+                    <h1>Ввеите данные:</h1>
+                </div>
+                <div class="value-container">
+                    <label class="value-container__label" for="value1">Переменная 1</label>
+                    <input class="value-container__input" type="text" id="value1" name="value1">
+                </div>
+                <div class="value-container">
+                    <label class="value-container__label" for="operator">Оператор</label>
+                    <input class="value-container__input" type="text" id="operator" name="operator" maxlength="1">
+                </div>
+                <div class="value-container">
+                    <label class="value-container__label" for="value2">Переменная 2</label>
+                    <input class="value-container__input" type="text" id="value2" name="value2">
+                </div>
+                <button class="form-container__button" id="calculate-button" type="button">Посчитать</button>
+                <div class="value-container">
+                    <label class="value-container__label" for="result">Результат</label>
+                    <input class="value-container__input" type="text" id="result" name="result" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
