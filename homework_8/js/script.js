@@ -55,7 +55,7 @@ button.addEventListener('click', (e) => {
     if (
       result === Number.POSITIVE_INFINITY ||
       result === Number.NEGATIVE_INFINITY ||
-      Number.isNaN(+value1 / +value2) === true
+      Number.isNaN(result) === true
     ) {
       console.log('Операция некорректна');
       document.getElementById('message-error').innerText =
