@@ -36,14 +36,14 @@ input:-webkit-autofill {
 .main {
   width: 100%;
   height: 100%;
+
+  display: flex;
+  justify-content: center;
 }
 
 .form-container {
   width: calc(600 / 1440 * 100vw);
   height: calc(500 / 1440 * 100vw);
-
-  margin-left: calc(403 / 1440 * 100vw);
-  margin-top: calc(125 / 1440 * 100vw);
 
   background: #ffffff;
   box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
