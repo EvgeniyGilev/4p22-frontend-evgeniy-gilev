@@ -9,6 +9,7 @@ button.addEventListener('click', (e) => {
   document.getElementById('result').value = '';
 
   if (String(value1).trim() === '') {
+    //! здесь и далее вывод в консоль только по услвоию задания
     console.log('Первое число не указано');
     errorMessage = 'Первое число не указано';
   } else if (String(value2).trim() === '') {
