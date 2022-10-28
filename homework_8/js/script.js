@@ -8,10 +8,10 @@ button.addEventListener('click', (e) => {
 
   document.getElementById('result').value = '';
 
-  if (value1 === '') {
+  if (String(value1).trim() === '') {
     console.log('Первое число не указано');
     errorMessage = 'Первое число не указано';
-  } else if (value2 === '') {
+  } else if (String(value2).trim() === '') {
     console.log('Второе число не указано');
     errorMessage = 'Второе число не указано';
   } else if (operator === '') {
