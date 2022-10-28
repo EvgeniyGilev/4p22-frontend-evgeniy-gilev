@@ -63,5 +63,5 @@ button.addEventListener('click', (e) => {
       console.log(result);
     }
   }
-  document.getElementById('message-error').innerHTML = errorMessage;
+  document.getElementById('message-error').textContent = errorMessage;
 });
