@@ -63,9 +63,10 @@ buttonSubmit.addEventListener('click', (event) => {
     formData.email = email.value;
     formData.password = password.value;
     formData.passwordConfirm = passwordConfirm.value;
-    formData.gender = document.querySelector(
+    const genderisShecked = document.querySelector(
       'input[name="gender"]:checked'
-    ).value;
+    );
+    formData.gender = genderisShecked !== null ? genderisShecked.value : '';
     formData.about = document.getElementById('about').value;
     formData.agreement = document.getElementById('agree').checked;
 
