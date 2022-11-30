@@ -39,14 +39,16 @@ buttonSubmit.addEventListener('click', (event) => {
     } else {
       emailError.textContent = 'Email введён некорректно';
     }
-    check = false;
     email.style.borderColor = '#ee2424';
+
+    check = false;
   }
 
   if (password.value.length < 8) {
     passwordError.textContent = 'Пароль должен содержать не менее 8 символов';
-    check = false;
     password.style.borderColor = '#ee2424';
+
+    check = false;
   }
 
   if (
@@ -54,8 +56,9 @@ buttonSubmit.addEventListener('click', (event) => {
     password.value !== passwordConfirm.value
   ) {
     passwordConfirmError.textContent = 'Пароли не совпадают';
-    check = false;
     passwordConfirm.style.borderColor = '#ee2424';
+
+    check = false;
   }
 
   if (check) {
@@ -63,10 +66,10 @@ buttonSubmit.addEventListener('click', (event) => {
     formData.email = email.value;
     formData.password = password.value;
     formData.passwordConfirm = passwordConfirm.value;
-    const genderisShecked = document.querySelector(
+    const genderisChecked = document.querySelector(
       'input[name="gender"]:checked'
     );
-    formData.gender = genderisShecked !== null ? genderisShecked.value : '';
+    formData.gender = genderisChecked !== null ? genderisChecked.value : '';
     formData.about = document.getElementById('about').value;
     formData.agreement = document.getElementById('agree').checked;
 
